@@ -1,0 +1,64 @@
+[
+    {
+        "id": 1,
+        "ativo": true,
+        "nomeCompleto": "Alef Ribeiro Dias",
+        "nascimento": "26-11-1993",
+        "nomeMae": "Elisete de Sousa Dias",
+        "sexo": "M",
+        "tipoPessoa": "PF",
+        "cpf": "12345678901",
+        "cnpj": null,
+        "telefones": {
+            "primeiro": {
+                "local": "casa",
+                "numero": "11941315592"
+            },
+            "segundo": {
+                "local": "trabalho",
+                "numero": "11987654321"
+            }
+        },
+        "email": {
+            "primeiro": "casa",
+            "segundo": "trabalho"
+        },
+        "enderecos": {
+            "primeiro": {
+                "pais": "Brasil",
+                "uf": "SP",
+                "cidade": "São Paulo",
+                "logradouro": "Jardim",
+                "numero": "50",
+                "complemento": null,
+                "bairro": "Jd. Fujihara",
+                "cep": "04929400"
+            },
+            "segundo": {
+                "pais": "Brasil",
+                "uf": "RJ",
+                "cidade": "Rio de Janeiro",
+                "logradouro": "AV",
+                "numero": "50",
+                "complemento": "Apartamento",
+                "bairro": "Copacabana",
+                "cep": "12345678"
+            }
+        },
+        "cargo": {
+            "funcao": "Chefe",
+            "salario": 1000.00,
+            "contratado": "01-03-2024",
+            "saida": null,
+            "banda": "A1",
+            "tempoCasa": null
+        },
+        "primeiraConsulta": "14-05-2024",
+        "ultimaConsulta": "15-05-2024"
+    },
+    {
+        "id": 2,
+        "nome": "Ayla",
+        "sexo": "F"
+    }
+]
