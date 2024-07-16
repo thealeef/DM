@@ -3,7 +3,6 @@
 @echo off
 cls
 
-cd  Projeto-Angular
-cd Diamont-Manage
+cd DM
 
 ng serve
