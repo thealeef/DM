@@ -1,0 +1,17 @@
+<p>funcionarios works!</p>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let funcionario of funcionarios">
+            <td> {{funcionario.id}} </td>
+            <td> {{funcionario.nomeCompleto}} </td>
+            <td> {{funcionario.nomeMae}} </td>
+        </tr>
+    </tbody>
+</table>
