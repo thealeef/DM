@@ -10,7 +10,7 @@ export class ApiServiceService {
   constructor(private http: HttpClient) { }
 
   chamaApi() {
-    return this.http.get<FuncionariosModel[]>('http://127.0.0.1:5000/funcionarios')
+    return this.http.get<FuncionariosModel[]>('https://flask-python-five.vercel.app/funcionarios')
   }
 
 }
