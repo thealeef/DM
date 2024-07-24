@@ -19,14 +19,22 @@ export class FuncionariosComponent {
 
   ngOnInit() {
     this.service.chamaApi().subscribe(funcionario => this.funcionarios = funcionario)
-    console.log(this.funcionarios)
+    //console.log(this.funcionarios)
 
     //this.funcionarios = this.service.chamaApi();
     //console.log(this.funcionarios);
   }
 
-  chama() {
+  eventoCriar() {
+    console.log('Evento Criar')
+  }
 
+  eventoEditar() {
+    console.log('Evento Editar')
+  }
+
+  eventoDeletar() {
+    console.log('Evento Deletar')
   }
 }
 
