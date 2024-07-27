@@ -10,6 +10,9 @@ cd Diamont-Manage
 ng generate component Nome_do_Componente
 
 ##### DEPLOY NO VERCEL #####
+
+ir para pasta antes do src
+
 vercel login
 
 vercel --prod

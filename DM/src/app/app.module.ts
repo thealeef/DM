@@ -6,12 +6,17 @@ import { FuncionariosComponent } from './pages/funcionarios/funcionarios.compone
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { SobreComponent } from './pages/sobre/sobre.component';
+import { GestaoComponent } from './pages/gestao/gestao.component';
+import { provideHttpClient, withFetch } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     FuncionariosComponent,
-    InicioComponent
+    InicioComponent,
+    SobreComponent,
+    GestaoComponent
   ],
   imports: [
     BrowserModule,
@@ -22,8 +27,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
   providers: [
     HttpClientModule,
     HttpClient,
-
-    provideClientHydration()
+    provideHttpClient(withFetch()),
+    provideClientHydration(),
   ],
   bootstrap: [AppComponent]
 })

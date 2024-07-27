@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ApiServiceService } from '../../api-service.service';
 import { FuncionariosModel } from '../../models/funcionarios.model';
-import { Observable } from 'rxjs';
+import { Inject } from '@angular/core';
 
 @Component({
   selector: 'app-funcionarios',
@@ -12,6 +12,10 @@ import { Observable } from 'rxjs';
 export class FuncionariosComponent {
 
   funcionarios: FuncionariosModel[] = []
+  criarCadastroBoleana = false
+  editarCadastroBoleana = false
+  deletaCadastroBoleana = false
+  respDeletaCadastroBoleana = false
 
   //funcionarios = new Observable<FuncionariosModel[]>();
 
@@ -23,18 +27,36 @@ export class FuncionariosComponent {
 
     //this.funcionarios = this.service.chamaApi();
     //console.log(this.funcionarios);
-  }
 
-  eventoCriar() {
-    console.log('Evento Criar')
+
   }
 
   eventoEditar() {
-    console.log('Evento Editar')
+    if (this.editarCadastroBoleana == false) {
+      this.editarCadastroBoleana = true
+    } else {
+      this.editarCadastroBoleana = false
+    }
   }
 
   eventoDeletar() {
-    console.log('Evento Deletar')
+    this.respDeletaCadastroBoleana = confirm("Deseja deletar?")
+
+    if (this.respDeletaCadastroBoleana) {
+      this.deletaCadastroBoleana = true;
+    } else {
+      this.deletaCadastroBoleana = false;
+    }
+
+    console.log(this.deletaCadastroBoleana)
+  }
+
+  abrirCadastro() {
+    if (this.criarCadastroBoleana == false) {
+      this.criarCadastroBoleana = true
+    } else {
+      this.criarCadastroBoleana = false
+    }
   }
 }
 
