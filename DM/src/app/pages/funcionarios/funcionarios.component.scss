@@ -30,59 +30,38 @@
     margin: 5px;
 }
 
-//POPUP
-
-.modal-window {
-    position: fixed;
-    background-color: rgba(255, 255, 255, 0.25);
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 999;
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s;
-
-    &:target {
-        visibility: visible;
-        opacity: 1;
-        pointer-events: auto;
-    }
-
-    &>div {
-        width: 400px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 2em;
-        background: white;
-    }
-
-    header {
-        font-weight: bold;
-    }
-
-    h1 {
-        font-size: 150%;
-        margin: 0 0 15px;
-    }
+.btns {
+    margin-right: 10px;
 }
 
-.modal-close {
-    color: #aaa;
-    line-height: 50px;
-    font-size: 80%;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    top: 0;
-    width: 70px;
-    text-decoration: none;
+.cadastro {
+    margin: 15px 0 10px 0;
+    border: solid 1px #cdcdcd;
+    padding: 15px;
+    border-radius: 5px;
+}
 
-    &:hover {
-        color: black;
-    }
+.cadastro h1 {
+    margin: 5px 0 5px 0;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: row;
+}
+
+.campos {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.camposInput {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.campo {
+    margin: 5px 0 5px 0;
 }
